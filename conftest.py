@@ -5,19 +5,16 @@ from selenium.webdriver.chrome.options import Options
 import pytest
 from selene import browser
 from dotenv import load_dotenv
-from selene import Config
 
 from utils import attach
 
 DEFAULT_BROWSER_VERSION = "100.0"
-
 
 def pytest_addoption(parser):
     parser.addoption(
         '--browser_version',
         default='100.0'
     )
-
 
 @pytest.fixture(scope='session', autouse=True)
 def load_env():
