@@ -3,8 +3,8 @@ from selene import have, by
 
 
 @allure.title("Registration form success")
-def test_successful(setup_browser):
-    browser = setup_browser
+def test_successful(browser_management):
+    browser = browser_management
 
     with allure.step("Открыть регистрационную форму"):
         browser.open("https://demoqa.com/automation-practice-form")
