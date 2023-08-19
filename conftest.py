@@ -5,6 +5,7 @@ from selenium.webdriver.chrome.options import Options
 import pytest
 from selene import browser
 from dotenv import load_dotenv
+from selene import Config
 
 from utils import attach
 
